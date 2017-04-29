@@ -5,7 +5,7 @@
 # file located at 		#
 # /etc/sensu/conf.d/		#
 # -For error resolution	mail at	#
-# rajkumar.jindal@minjar.com	#
+#    mailrkjindal@gmail.com	#
 #				#
 #################################
 
