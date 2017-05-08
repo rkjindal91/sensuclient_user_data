@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #################################
 #				#
 # -Following script will change	#
@@ -9,11 +11,12 @@
 #				#
 #################################
 
-#!/bin/bash
+
 set -e -x
 export DEBIAN_FRONTEND=noninteractive
 yum update -y
 yum install bind-utils -y
+sleep 5s
 MYNAME=$(hostname)
 sed -i "s/^\"name\"\:.*$/\"name\"\:\"$MYNAME\"\,/g" /etc/sensu/conf.d/client.json
 
